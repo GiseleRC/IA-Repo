@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static GameManager instance;
+    public Player player;
+    public NodeGrid nodeGrid;
+    private Pathfinding _pathfinding = new Pathfinding();
+    public List<NewEnemy> _allEnemies = new List<NewEnemy>();
+
+    private void Awake()
     {
-        
+        if (instance == null) instance = this;
+        else Destroy(this.gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public Pathfinding Pathfinding { get { return _pathfinding; } }
+    public List<NewEnemy> AllEnemies { get { return _allEnemies; } }
 }

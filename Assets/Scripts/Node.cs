@@ -4,12 +4,36 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    [SerializeField] List<Node> nodeList = new List<Node>();
+    [SerializeField] List<Node> _neightbours = new List<Node>();
+    [SerializeField] float neightbourRadius;
+    [SerializeField] LayerMask enemies;
 
-    public List<Node> GetNeightboursNodes(int node)
+    private void Awake()
     {
-        List<Node> neightnours = new List<Node>();
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, neightbourRadius);
+        foreach (var hitCollider in hitColliders)
+        {
+            RaycastHit hit;
+            var isNode = hitCollider.gameObject.GetComponent<Node>();
+            if (isNode != null)
+            {
+                Physics.Raycast(transform.position, isNode.transform.position - transform.position, out hit);
 
-        return neightnours;
+                if (hit.transform == isNode.transform)
+                {
+                    _neightbours.Add(isNode);
+                }
+            }
+        }
+    }
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawWireSphere(transform.position, neightbourRadius);
+    //}
+
+    public List<Node> GetNeightbours()
+    {
+        return _neightbours;
     }
 }
