@@ -2281,7 +2281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _closeNodeRadius: 6
   closeNode: {fileID: 108982155}
-  _playerSpeed: 8
+  _playerSpeed: 9
 --- !u!1 &774048677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,8 +3005,8 @@ MonoBehaviour:
   - {fileID: 1951612643}
   - {fileID: 355849279}
   - {fileID: 108982155}
-  _speed: 6
-  _viewRadius: 5
+  _speed: 8
+  _viewRadius: 4
   _viewAngle: 90
   wallLayer:
     serializedVersion: 2
@@ -3242,8 +3242,8 @@ MonoBehaviour:
   _waypoints:
   - {fileID: 1670654973}
   - {fileID: 806360908}
-  _speed: 6
-  _viewRadius: 5
+  _speed: 8
+  _viewRadius: 4
   _viewAngle: 90
   wallLayer:
     serializedVersion: 2
@@ -3366,8 +3366,8 @@ MonoBehaviour:
   - {fileID: 1401860839}
   - {fileID: 1202054258}
   - {fileID: 86822031}
-  _speed: 6
-  _viewRadius: 5
+  _speed: 8
+  _viewRadius: 4
   _viewAngle: 90
   wallLayer:
     serializedVersion: 2
@@ -5013,8 +5013,8 @@ MonoBehaviour:
   - {fileID: 588478324}
   - {fileID: 281130529}
   - {fileID: 1401860839}
-  _speed: 6
-  _viewRadius: 5
+  _speed: 8
+  _viewRadius: 4
   _viewAngle: 90
   wallLayer:
     serializedVersion: 2
