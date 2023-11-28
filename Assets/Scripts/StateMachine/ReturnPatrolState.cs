@@ -42,7 +42,10 @@ public class ReturnPatrolState : IState
             {
                 if (enemy != _this)
                 {
-                    enemy.ChangeState(States.Hunt);
+                    if (_FSM.currentState != States.Chase && _FSM.currentState != States.Hunt)
+                    {
+                        enemy.ChangeState(States.Hunt);    
+                    }
                 }
             }
 

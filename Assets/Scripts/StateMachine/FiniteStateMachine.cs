@@ -6,6 +6,7 @@ using UnityEngine;
 public class FiniteStateMachine
 {
     private IState _currentState;
+    public States currentState;
     private Dictionary<States, IState> _allStates = new Dictionary<States, IState>();
 
     public void Update()
@@ -18,6 +19,7 @@ public class FiniteStateMachine
         if (!_allStates.ContainsKey(state)) return;
         if (_currentState != null) _currentState.OnExit();
         _currentState = _allStates[state];
+        currentState = state;
         _currentState.OnStart();
     }
 

@@ -22,7 +22,7 @@ public class ChaseState :  IState
 
     public void OnUpdate()
     {
-        Chase();
+        //Chase();
         NoTarget();
     }
     public void OnExit()
@@ -41,6 +41,9 @@ public class ChaseState :  IState
         if (!_this.InFOV(GameManager.instance.player))
         {
             _FMS.ChangeState(States.ReturnPatrol);
+            return;
         }
+        var dir = GameManager.instance.player.transform.position - _this.transform.position;
+        _this.MoveToDir(dir);
     }
 }
