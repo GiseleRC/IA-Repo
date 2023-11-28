@@ -32,7 +32,6 @@ public class ReturnPatrolState : IState
     public void OnExit()
     {
         _this.PathToFollow.Clear();
-        Debug.Log("Sal? de ReturnPatrol");
     }
 
     private void GotTarget()

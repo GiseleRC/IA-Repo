@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class Node : MonoBehaviour
 {
-    [SerializeField] List<Node> _neightbours = new List<Node>();
-    [SerializeField] float neightbourRadius;
-    [SerializeField] LayerMask enemies;
+    [SerializeField] private List<Node> _neightbours = new List<Node>();
+    [SerializeField] private float _neightbourRadius;
+    [SerializeField] private LayerMask _enemies;
 
     private void Awake()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, neightbourRadius);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, _neightbourRadius);
         foreach (var hitCollider in hitColliders)
         {
             RaycastHit hit;
@@ -26,11 +26,6 @@ public class Node : MonoBehaviour
             }
         }
     }
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawWireSphere(transform.position, neightbourRadius);
-    //}
 
     public List<Node> GetNeightbours()
     {

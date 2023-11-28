@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &108781577
@@ -446,8 +446,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &128579786
@@ -755,8 +755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &281130524
@@ -870,8 +870,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &302576082
@@ -1342,8 +1342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &384692022
@@ -1718,8 +1718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &618457613
@@ -1833,8 +1833,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &680678913
@@ -2045,8 +2045,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &719595796
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba21eda87e708c4c81a14df7583a25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeNodeRadius: 4.65
+  _closeNodeRadius: 12
   closeNode: {fileID: 108982155}
   _playerSpeed: 8
 --- !u!1 &774048677
@@ -2587,8 +2587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &832575517
@@ -2751,8 +2751,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &927208898
@@ -2998,7 +2998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b435799354202f4a93dcef557fd2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeNodeRadius: 4.65
+  _closeNodeRadius: 6
   closeNode: {fileID: 0}
   _waypoints:
   - {fileID: 680972125}
@@ -3006,8 +3006,8 @@ MonoBehaviour:
   - {fileID: 355849279}
   - {fileID: 108982155}
   _speed: 6
-  viewRadius: 4
-  viewAngle: 90
+  _viewRadius: 5
+  _viewAngle: 90
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -3122,8 +3122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1065721915
@@ -3237,14 +3237,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b435799354202f4a93dcef557fd2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeNodeRadius: 4.65
+  _closeNodeRadius: 6
   closeNode: {fileID: 0}
   _waypoints:
   - {fileID: 1670654973}
   - {fileID: 806360908}
   _speed: 6
-  viewRadius: 4
-  viewAngle: 90
+  _viewRadius: 5
+  _viewAngle: 90
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -3359,7 +3359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b435799354202f4a93dcef557fd2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeNodeRadius: 4.65
+  _closeNodeRadius: 6
   closeNode: {fileID: 0}
   _waypoints:
   - {fileID: 281130529}
@@ -3367,8 +3367,8 @@ MonoBehaviour:
   - {fileID: 1202054258}
   - {fileID: 86822031}
   _speed: 6
-  viewRadius: 4
-  viewAngle: 90
+  _viewRadius: 5
+  _viewAngle: 90
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -3610,8 +3610,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1207492335
@@ -4247,8 +4247,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1443973497
@@ -4362,8 +4362,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1461922269
@@ -4783,8 +4783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1731691997
@@ -4995,7 +4995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b435799354202f4a93dcef557fd2e3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeNodeRadius: 4.65
+  _closeNodeRadius: 6
   closeNode: {fileID: 0}
   _waypoints:
   - {fileID: 1056920652}
@@ -5003,8 +5003,8 @@ MonoBehaviour:
   - {fileID: 281130529}
   - {fileID: 1401860839}
   _speed: 6
-  viewRadius: 4
-  viewAngle: 90
+  _viewRadius: 5
+  _viewAngle: 90
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -5216,8 +5216,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  neightbourRadius: 9.75
-  enemies:
+  _neightbourRadius: 6
+  _enemies:
     serializedVersion: 2
     m_Bits: 64
 --- !u!1 &1966543095

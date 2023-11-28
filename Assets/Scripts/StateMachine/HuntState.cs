@@ -6,6 +6,7 @@ public class HuntState : IState
 {
     private FiniteStateMachine _FSM;
     private NewEnemy _this;
+
     public HuntState(FiniteStateMachine FSM, NewEnemy enemy)
     {
         _FSM = FSM;

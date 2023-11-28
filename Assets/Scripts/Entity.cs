@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    [SerializeField] float closeNodeRadius;
+    [SerializeField] private float _closeNodeRadius;
+
     public Node closeNode;
 
     public void CloseNode()
     {
-        Collider[] hitColliders = Physics.OverlapSphere(transform.position, closeNodeRadius);
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, _closeNodeRadius);
         float closestNode = Mathf.Infinity;
 
         foreach (var hitCollider in hitColliders)
@@ -19,7 +20,6 @@ public class Entity : MonoBehaviour
             if (isNode != null)
             {
                 Physics.Raycast(transform.position, isNode.transform.position - transform.position, out hit);
-                //Debug.Log(isNode);
 
                 if (hit.transform == isNode.transform)
                 {
@@ -30,14 +30,6 @@ public class Entity : MonoBehaviour
                     }
                 }
             }
-
         }
     }
-
-    //private void OnDrawGizmos()
-    //{
-    //    Gizmos.color = Color.red;
-    //    Gizmos.DrawWireSphere(transform.position, closeNodeRadius);
-
-    //}
 }

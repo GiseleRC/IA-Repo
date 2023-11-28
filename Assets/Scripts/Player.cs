@@ -19,7 +19,6 @@ public class Player : Entity
         if (h != 0 || v != 0)
         {
             transform.position += new Vector3(h, 0, v) * _playerSpeed * Time.deltaTime;
-
         }
 
         CloseNode();

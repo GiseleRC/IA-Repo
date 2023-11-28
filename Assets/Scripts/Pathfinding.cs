@@ -19,38 +19,38 @@ public class Pathfinding
 
         while (frontier.count > 0)
         {
-            Node current = frontier.Dequeue();
+            Node currentNode = frontier.Dequeue();
 
-            if (current == GoalNode)
+            if (currentNode == GoalNode)
             {
                 List<Node> path = new List<Node>();
-                while (current != StartingNode)
+                while (currentNode != StartingNode)
                 {
-                    path.Add(current);
-                    current = cameFrom[current];
+                    path.Add(currentNode);
+                    currentNode = cameFrom[currentNode];
                 }
 
-                path.Add(current);
+                path.Add(currentNode);
 
                 path.Reverse();
                 return path;
             }
 
-            foreach (var next in current.GetNeightbours())
+            foreach (var next in currentNode.GetNeightbours())
             {
-                int newCost = costSoFar[current];
+                int newCost = costSoFar[currentNode];
                 if (!costSoFar.ContainsKey(next))
                 {
                     float priority = newCost + Vector3.Distance(next.transform.position, GoalNode.transform.position);
                     frontier.Enqueue(next, priority);
-                    cameFrom.Add(next, current);
+                    cameFrom.Add(next, currentNode);
                     costSoFar.Add(next, newCost);
                 }
                 else if (costSoFar[next] > newCost)
                 {
                     float priority = newCost + Vector3.Distance(next.transform.position, GoalNode.transform.position);
                     frontier.Enqueue(next, priority);
-                    cameFrom[next] = current;
+                    cameFrom[next] = currentNode;
                     costSoFar[next] = newCost;
                 }
             }
