@@ -12,12 +12,12 @@ public enum States
 
 public class NewEnemy : Entity
 {
-    [SerializeField] Node[] _waypoints;
-    [SerializeField] float _speed;
-    [SerializeField] float viewRadius;
-    [SerializeField] float viewAngle;
-    private List<Node> _pathToFollow = new List<Node>();
+    [SerializeField] private Node[] _waypoints;
+    [SerializeField] private float _speed;
+    [SerializeField] private float _viewRadius;
+    [SerializeField] private float _viewAngle;
 
+    private List<Node> _pathToFollow = new List<Node>();
     private FiniteStateMachine _FSM = new FiniteStateMachine();
 
     public LayerMask wallLayer;
@@ -47,8 +47,8 @@ public class NewEnemy : Entity
 
     public bool InFOV(Player obj)
     {
-        if (Vector3.Distance(transform.position, obj.transform.position) > viewRadius) return false;
-        if (Vector3.Angle(transform.forward, obj.transform.position - transform.position) > (viewAngle / 2)) return false;
+        if (Vector3.Distance(transform.position, obj.transform.position) > _viewRadius) return false;
+        if (Vector3.Angle(transform.forward, obj.transform.position - transform.position) > (_viewAngle / 2)) return false;
 
         return InLineOfSight(transform.position, obj.transform.position);
     }
