@@ -3315,7 +3315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 720420837}
-  nodeGrid: {fileID: 0}
+  nodeGrid: {fileID: 302576084}
   _allEnemies: []
 --- !u!1 &1202054253
 GameObject:

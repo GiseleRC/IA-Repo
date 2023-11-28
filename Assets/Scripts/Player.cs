@@ -6,7 +6,7 @@ public class Player : Entity
 {
     [SerializeField] float _playerSpeed;
 
-    private void Awake()
+    private void Start()
     {
         GameManager.instance.player = this;
     }
