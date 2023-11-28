@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Pathfinding : MonoBehaviour
+public class Pathfinding
 {
     public List<Node> AStar(Node StartingNode, Node GoalNode)
     {
@@ -30,7 +30,7 @@ public class Pathfinding : MonoBehaviour
                     current = cameFrom[current];
                 }
 
-                path.Add(current); // Agregado para que no atraviese paredes
+                path.Add(current);
 
                 path.Reverse();
                 return path;
@@ -38,7 +38,7 @@ public class Pathfinding : MonoBehaviour
 
             foreach (var next in current.GetNeightbours())
             {
-                int newCost = costSoFar[current]; //+next.cost
+                int newCost = costSoFar[current];
                 if (!costSoFar.ContainsKey(next))
                 {
                     float priority = newCost + Vector3.Distance(next.transform.position, GoalNode.transform.position);
@@ -57,6 +57,5 @@ public class Pathfinding : MonoBehaviour
         }
 
         return new List<Node>();
-
     }
 }
