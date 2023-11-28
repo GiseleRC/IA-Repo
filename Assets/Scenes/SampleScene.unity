@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -1718,7 +1718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba21eda87e708c4c81a14df7583a25d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _closeNodeRadius: 12
+  _closeNodeRadius: 6
   closeNode: {fileID: 108982155}
   _playerSpeed: 8
 --- !u!1 &774048677
@@ -2587,7 +2587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -2751,7 +2751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -3122,7 +3122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -4247,7 +4247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -4362,7 +4362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -4783,7 +4783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
@@ -5216,7 +5216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _neightbours: []
-  _neightbourRadius: 6
+  _neightbourRadius: 12
   _enemies:
     serializedVersion: 2
     m_Bits: 64
