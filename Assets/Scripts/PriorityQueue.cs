@@ -5,6 +5,7 @@ using UnityEngine;
 public class PriorityQueue<T>
 {
     Dictionary<T, float> _allElements = new Dictionary<T, float>();
+
     public int count { get { return _allElements.Count; } }
 
     public void Enqueue(T element, float cost)

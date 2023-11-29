@@ -15,7 +15,7 @@ public class Node : MonoBehaviour
         {
             RaycastHit hit;
             var isNode = hitCollider.gameObject.GetComponent<Node>();
-            if (isNode != null)
+            if (isNode != null/* && isNode.gameObject.GetComponent<LayerMask>().value != 7*/)
             {
                 Physics.Raycast(transform.position, isNode.transform.position - transform.position, out hit);
 
